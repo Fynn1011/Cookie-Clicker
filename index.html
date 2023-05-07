@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cookie.css">
+</head>
+<body>
+
+    <div id="dropdown">
+        <img src="bilder/dropdown.png" onclick="dropdown();" id="burgerMenu">
+        <img src="bilder/cross.png" onclick="dropdownReverse();" id="cross">
+        <div id="contentDrop">
+        <p id="stats">Stats:</p>    
+        <p id="zeit"></p>
+        <p id="clicks"></p>
+        <p id="gesamt"></p>
+
+        <button id="prestigeUp" onclick="prestige();">Prestige</button>
+
+        <img src="bilder/settings.png" id="settings" onclick="showSettings();">
+
+        <div id="options">
+            <p id="stats">Options:</p>
+            <input type="checkbox" id="smallerNmb" name="nmbSmall">
+            <label for="nmbSmall" id="optionLabel">Show bigger Numbers</label> <br>
+            <input type="checkbox" id="option2" name="option">
+            <label for="option" id="optionLabel">Show Alternative Cookie</label> <br>
+            <input type="checkbox" id="noBorder" name="borderDel">
+            <label for="borderDel" id="optionLabel">Hide Borders</label> <br>
+            <button id="colorMenu" onclick="changeBgMenu();">Open Color Menu</button> <br>
+            <a href="/" id="linkPicker">Color Picker</a>
+            <input id="bgColor" type="text" placeholder="Enter Color Hexcode">
+            <button id="enterColor" onclick="changeBg();">Enter</button>
+        </div>
+
+        
+        </div>
+    </div>
+
+    <div class="absolute">
+        <div class="relativeCenter">
+            <p id="alert"></p>
+        </div>
+    </div>  
+
+    <div class="center">
+        <img src="bilder/cookieAlt.png" id="cookieAlt" alt="Imagine a nice cookie here">
+        <img src="bilder/cookie.png" id="keks" alt="Imagine a nice cookie here">
+    </div>
+
+        <div class="foldout">
+            <div id="ouputCenter">
+            <p id="output"></p>
+            </div>
+            <div class="center">
+                <button onclick="multiUpgrade();" id="buttonClick">Upgrade Click</button> <br>
+                <button onclick="timeUpdate();" id="buttonClick">Autoclicker Upgrade</button>
+                <button onclick="timeMarginUpdate();" id="buttonClick">Interval Upgrade</button>
+            </div>
+        
+            <p id="kosten"></p>
+            <p id="kostenZeit"></p>
+            <p id="intervalKosten"></p>
+            <p id="OneKCookies"></p>
+            <div id="contentBottom">
+            <button onclick="resetAsk();" id="resetButton">Reset</button>
+            <p id="resetAsk"></p>
+            </div>
+        </div>    
+        <p id="resetText">Are you sure you want to reset the game?</p>
+        <div id="resetButtons">
+        <button id="resetConfirm" onclick="ogState();">Confirm</button>
+        <button id="resetDecline" onclick="decline();">No</button>
+        </div>
+        <p id="credits" onclick="versionMenu();">made by Fynn Krull</p>
+        <ul id="version">
+            <li><a href="index.html">v1.0</a></li>
+        </ul>
+    <script src="cookie.js"></script>
+</body>
+</html>
